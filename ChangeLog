@@ -1,0 +1,3 @@
+1. in shop.js change router to route
+2. in product.js ln24 thi to this
+3. in add-product.pug ln11 titel to title
