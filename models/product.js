@@ -1,7 +1,8 @@
-const fs = require('fs');
-const path = require('path');
+import fs from "fs";
 
-const rootDir = require('../util/path');
+import path from "path";
+
+import rootDir from "../util/path";
 
 const p = path.join(rootDir, 'data', 'products.json');
 
@@ -21,7 +22,7 @@ module.exports = class Product {
 
     save() {
         getProductsFromFile(products => {
-            products.push(thi);
+            products.push(this.title);
             fs.writeFile(p, JSON.stringify(products), (err) => {
                 console.log(err);
             });
